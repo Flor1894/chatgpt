@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatGPT App</title>
+</head>
+<body>
+    <h1>Chat con GPT</h1>
+    <form action="/ask" method="post">
+        <input type="text" name="user_input" placeholder="Escribe tu pregunta aquí..." required>
+        <button type="submit">Enviar</button>
+    </form>
+    {% if answer %}
+        <h2>Respuesta:</h2>
+        <p>{{ answer }}</p>
+    {% endif %}
+</body>
+</html>
